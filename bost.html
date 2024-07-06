@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- Favicon -->
+    <link rel="icon" href="coin.png" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="coin.png" />
+
+    <!-- Title -->
+    <title>Boosts</title>
+
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link href="assets/css-dark/style.css" rel="stylesheet" />
+    <link href="assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="assets/plugins/horizontal-menu/dropdown-effects/fade-down.css" rel="stylesheet">
+    <link href="assets/plugins/horizontal-menu/dark-horizontalmenu.css" rel="stylesheet">
+    <link href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="assets/plugins/accordion1/css/dark-easy-responsive-tabs.css" rel="stylesheet">
+    <link href="assets/plugins/sidebar/dark-sidebar.css" rel="stylesheet">
+    <link href="assets/plugins/iconfonts/plugin.css" rel="stylesheet" />
+    <link href="assets/plugins/iconfonts/icons.css" rel="stylesheet" />
+    <link href="assets/fonts/fonts/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="assets/js-dark/vendors/jquery-3.2.1.min.js"></script>
+    <script src="assets/plugins/bootstrap/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js-dark/vendors/jquery.sparkline.min.js"></script>
+    <script src="assets/js-dark/vendors/circle-progress.min.js"></script>
+    <script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+    <script src="assets/plugins/moment/moment.min.js"></script>
+    <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="assets/plugins/horizontal-menu/horizontalmenu.js"></script>
+    <script src="assets/plugins/accordion1/js/easyResponsiveTabs.js"></script>
+    <script src="assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/plugins/sidebar/sidebar.js"></script>
+    <script src="assets/plugins/counters/jquery.missofis-countdown.js"></script>
+    <script src="assets/plugins/counters/counter.js"></script>
+    <script src="assets/plugins/chart/chart.bundle-dark.js"></script>
+    <script src="assets/plugins/chart/utils.js"></script>
+    <script src="assets/plugins/peitychart/jquery.peity.min.js"></script>
+    <script src="assets/plugins/peitychart/peitychart.init.js"></script>
+    <script src="assets/js-dark/index3.js"></script>
+    <script src="assets/js-dark/custom.js"></script>
+
+    <!-- Custom CSS to position the progress bar and coin -->
+    <style>
+        .absolute-progress-bar {
+            position: fixed;
+            top: 75%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%);
+            width: 80%; /* Adjust width as needed */
+            z-index: 100;
+        }
+
+        .progress-bar {
+            width: 100%;
+        }
+
+        .coin {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 200;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .coin img {
+            width: 200px; /* Adjust the size of the coin */
+        }
+
+        .coin-count {
+            position: fixed;
+            top: calc(30% - 120px); /* Adjust to be above the coin image */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            z-index: 300;
+            color: #FFD700;
+        }
+
+        .btn-container {
+            position: fixed;
+            top: 25%; /* Adjust this value to position the button as needed */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 400;
+            text-align: center;
+        }
+
+        .btn-container button {
+            margin: 5px; /* Adjust spacing between buttons */
+            font-size: 1.04rem; /* Increase font size */
+            padding: 5px 20px; /* Increase padding */
+        }
+
+        .btn-twitter {
+            background-color: #007bff; /* Replace with the color of the energy limit progress bar */
+            color: #fff;
+        }
+        
+        .click-limit {
+            font-size: 0.9rem;
+            color: #ff0000;
+        }
+    </style>
+</head>
+<style>img[alt="www.000webhost.com"]{display:none;}</style>
+<body class="app sidebar-mini rtl">
+    <!--Global-Loader-->
+    <div id="global-loader">
+        <img src="assets/images/icons/loader.svg" alt="loader">
+    </div>
+
+    <div class="page">
+        <div class="page-main">
+            <!-- App Header -->
+            <div class="app-header header hor-topheader d-flex">
+                <div class="container">
+                    <div class="d-flex">
+                        <a class="header-brand" href="index.html">
+                            <img src="coin.png" class="header-brand-img main-logo" alt="Logo">
+                            <img src="coin.png" class="header-brand-img icon-logo" alt="Logo">
+                        </a>
+                        <div class="d-flex order-lg-2 ml-auto header-rightmenu">
+                            <!-- Removed Full Screen Button -->
+                            <div class="dropdown header-user">
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- App Header End -->
+
+            <!-- Horizontal Menu -->
+            <div class="horizontal-main hor-menu clearfix">
+                <div class="horizontal-mainwrapper container clearfix">
+                    <nav class="horizontalMenu clearfix">
+                        <!-- Nav items can be added here -->
+                    </nav>
+                </div>
+            </div>
+            <!-- Horizontal Menu End -->
+
+            <!-- Header Submenu -->
+            <div class="bg-white p-3 header-secondary header-submenu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex">
+                                <!-- Additional submenu items can be added here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Submenu End -->
+
+            <!-- App Content -->
+            <div class="container content-area">
+                <div class="side-app">
+                    <!-- Page Header -->
+                    <div class="page-header">
+                        <ol class="breadcrumb"></ol>
+                    </div>
+
+                    <!-- Button Container -->
+                    <div class="btn-container">
+                        <!-- Default Button -->
+                        <a href="#" id="boost-btn" class="btn btn-pill btn-default">
+                            <img src="default-logo.png" alt="" class="button-logo"> Boost
+                        </a>
+                        <span id="boost-count" class="click-limit">3/3</span>
+
+                        <!-- Primary Button -->
+                        <a href="#" id="fullenergy-btn" class="btn btn-pill btn-primary">
+                            <img src="primary-logo.png" alt="" class="button-logo"> FullEnergy
+                        </a>
+                        <span id="fullenergy-count" class="click-limit">3/3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- JavaScript to handle click limits -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const boostBtn = document.getElementById('boost-btn');
+        const fullEnergyBtn = document.getElementById('fullenergy-btn');
+        const boostCountDisplay = document.getElementById('boost-count');
+        const fullEnergyCountDisplay = document.getElementById('fullenergy-count');
+
+        let boostClicks = 3;
+        let fullEnergyClicks = 3;
+
+        boostBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (boostClicks > 0) {
+                boostClicks--;
+                boostCountDisplay.textContent = `${boostClicks}/3`;
+                if (boostClicks === 0) {
+                    boostBtn.classList.add('disabled');
+                    boostBtn.removeEventListener('click', handleBoostClick);
+                }
+            }
+        });
+
+        fullEnergyBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (fullEnergyClicks > 0) {
+                fullEnergyClicks--;
+                fullEnergyCountDisplay.textContent = `${fullEnergyClicks}/3`;
+                if (fullEnergyClicks === 0) {
+                    fullEnergyBtn.classList.add('disabled');
+                    fullEnergyBtn.removeEventListener('click', handleFullEnergyClick);
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
