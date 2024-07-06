@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: "amir";
+	src: url( "/assets/amir2.ttf");
+}
+
+* {
+  font-family: amir;
+}
